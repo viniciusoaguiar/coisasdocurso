@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!--link dos arquivos css-->
+	<link rel="stylesheet" type="text/css" href="../css/background.css
+">
+	<link rel="stylesheet" type="text/css" href="../css/style.css
+">
+	<link rel="stylesheet" type="text/css" href="../css/imgs.css
+"><!--Fim dos arquivos css-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css">
+  <!--inicio dos arquivos bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!--fim dos arquivos bootstrap-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		.esconder {
+			display: none;
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function validarnome(){
+			var nome = document.getElementById('nome').value;
+			if (nome.length == 0){
+				document.getElementById('esconder1').style.display= "initial";
+				return false;
+			} else {
+				alert("Todos os campos foram preenchidos!");
+				return true;
+			} 
+		}
+		function validaremail(){
+			var nome = document.getElementById('E-mail').value;
+			if (nome.length == 0){
+				document.getElementById('esconder2').style.display= "initial";
+				return false;
+			} else {
+				alert("Todos os campos foram preenchidos!");
+				return true;
+			} 
+		}
+		function validarassunto(){
+			var nome = document.getElementById('Assunto').value;
+			if (nome.length == 0){
+				document.getElementById('esconder3').style.display= "initial";
+				return false;
+			} else {
+				alert("Todos os campos foram preenchidos!");
+				return true;
+			} 
+		}
+		function validarmsg(){
+			var nome = document.getElementById('Mensagem').value;
+			if (nome.length == 0){
+				document.getElementById('esconder4').style.display= "initial";
+				return false;
+			} else {
+				alert("Todos os campos foram preenchidos!");
+				return true;
+			} 
+		}
+		function validarcadastro(){
+			var retorno = validarmsg()&&validarassunto()&&validaremail()&&validarnome();
+			if(retorno){
+				return true;
+			}
+			return false;
+		}
+	</script>
+	<meta charset="utf-8">
+	<title>Login | Imagem n'ação</title>
+</head>
+<body>
+	<div>
+	<header><!--Inicio do cabeçalho-->
+		<a href="" title="Imagem N'Ação" rel="Home">
+		<img align="center" width="877" src="../imgs/header.png">
+		</a>
+		<nav><!--Barra de navegação-->
+		 <ul>
+  			<li><a href="../index.html">Home</a></li>
+  			<li><a href="../index.html#Sobre">Sobre</a></li>
+  			<li><a href="../index.html#Equipe">Equipe</a></li>
+  			<li><a href="../index.html#Contato">Contato</a></li>
+  			<li><a href="blog.html">Blog</a></li>
+  			<li><a href="atualizarconta.html">Vinicius Oliveira</a></li>
+  			<li><a href="../index.html">Sair</a></li>
+		</ul> 
+		</nav><!--Fim da barra de navegação-->
+	</header>
+	<div class="container" align="center">
+	<p><b>Registre-se:</b></p><!--area de atualização-->
+  	<form action="#" onsubmit="validarcadastro(this)">
+  		<label for="nome">Nome</label>
+    	<input type="nome" id="nome" name="nome" placeholder="Nome" onblur="validarnome(this)">
+    	<div class="esconder" id="esconder1">*Campo obrigatório*</div>
+    	<br>
+    	<label for="E-mail">E-mail</label>
+    	<input type="E-mail" id="E-mail" name="E-mail" placeholder="E-mail" onblur="validaremail(this)">
+    	<div class="esconder" id="esconder2">*Campo obrigatório*</div>
+    	<br>
+    	<label for="Assunto">Assunto</label>
+    	<input type="text" id="Assunto" name="Assunto" placeholder="Assunto" onblur="validarassunto(this)">
+    	<div class="esconder" id="esconder3">*Campo obrigatório*</div>
+    	<br>
+    	<label for="Mensagem">Mensagem</label>
+    	<textarea id="Mensagem" placeholder="Sua Mensagem" onblur="validarmsg(this)"></textarea>
+    	<div class="esconder" id="esconder4">*Campo obrigatório*</div>
+    	<br>
+ 		<input type="submit">
+
+  </form>
+	</div>
+	</div><!--fim da area de atualização-->
+		<div>
+		<footer class="row footer" ><!--rodapé-->
+			<a href="index.html#">
+			<h3 class="textopé">&nbsp;&nbsp;Imagem n'ação</h3>
+			</a>
+			<div class="col-lg-4 text-right">
+			Nos siga nas redes sociais:<br>
+			<img class="face" src="../imgs/face.png
+">
+			<img class="twitter" src="../imgs/twit.png
+">
+		<p class="créditos">Imagem n'ação | Vinicius Oliveira | 2017</p>
+		</footer><!--fim da area de rodapé-->
+	</div>
+
+</body>
+</html>
