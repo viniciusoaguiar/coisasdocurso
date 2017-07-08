@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Atividade 1 - Vinicius</title>
+</head>
+<body>
+<fieldset>
+	<legend>Atividade Extra: Mascáras</legend>
+		<label>CPF</label>
+		<input type="text" name="cpf" maxlength="14" onkeydown="mascara(this)">
+		<label>FONE</label>
+		<input type="text" name="telefone" maxlength="13" onkeydown="mascaraFone(this)">
+		<label>CEP</label>
+		<input type="text" name="cep" maxlength="9" onkeydown="mascaraCep(this)">
+</fieldset>
+	
+	<script type="text/javascript">
+	function mascara(cpf) {
+	if (cpf.value.length == 3)
+		cpf.value = cpf.value + '.';
+	if (cpf.value.length == 7)
+		cpf.value = cpf.value + '.';
+	if (cpf.value.length == 11)
+		cpf.value = cpf.value + '-';		
+}
+	function mascaraFone(telefone) {
+	if(telefone.value.length == 0)
+     telefone.value = '(' + telefone.value;
+ 	if (telefone.value.length == 3)
+     telefone.value = telefone.value + ')';
+ 	if(telefone.value.length == 8)
+     telefone.value = telefone.value + '-';
+}
+	function mascaraCep(cep) {
+	if(cep.value.length == 5)
+     cep.value = cep.value + '-';
+ 	
+}
+
+	</script>
+</body>
+</html>

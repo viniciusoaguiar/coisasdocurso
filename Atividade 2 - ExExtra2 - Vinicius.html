@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ExExtra2</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<style type="text/css">
+		#esconder {
+			display: none;
+		}
+		div {
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function validar(){
+		var valcpf = document.getElementById('cpf').value;
+			if (valcpf.length<11){
+				document.getElementById('esconder').style.display= "initial";
+				return false;
+			} else {
+				alert("Todos os campos foram preenchidos!");
+				return true;
+			} 
+		}
+	</script>
+</head>
+<body>
+<!--redirecionar para página tal-->
+	<form action="https://google.com" onsubmit="return validar(this)">
+	<fieldset>
+		<legend>Atividade Extra: Verificação de preenchimento de campos</legend>
+		<label>CPF:</label>
+			<input type="text" id="cpf" maxlength="11" onblur="validar(this)" onsubmit="done(this)">
+			<div id="esconder">*Campo obrigatório*</div>
+			<br>
+			<input type="submit" name="enviar">
+	</fieldset>
+
+	</form>
+	
+</body>
+</html>

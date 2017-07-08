@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--link dos arquivos css-->
+	<link rel="stylesheet" type="text/css" href="css/background.css
+">
+	<link rel="stylesheet" type="text/css" href="css/style.css
+">
+	<link rel="stylesheet" type="text/css" href="css/imgs.css
+"> <!--Fim dos arquivos css-->
+	<!--inicio dos arquivos bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!--Fim dos arquivos bootstrap-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		#div1 {
+			width: 500px;
+			height: 500px;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Imagem N'Ação</title>
+</head>
+<body>
+	<div>
+	<header><!--Inicio do cabeçalho-->
+		<a href="" title="Imagem N'Ação" rel="Home">
+		<img align="center" width="877" src="imgs/header.png"><!--banner do site-->
+		</a>
+		<nav><!--barra de navegação-->
+		 <ul>
+  			<li><a href="index.html">Home</a></li>
+  			<li><a href="#Sobre">Sobre</a></li>
+  			<li><a href="#Equipe">Equipe</a></li>
+  			<li><a href="#Contato">Contato</a></li>
+  			<li><a href="html/blog.html">Blog</a></li>
+  			<li><a href="html/login.html">Login</a></li>
+		</ul> 
+		</nav><!--Fim da barra de navegação-->
+	</header><!--fim do cabeçalho-->
+	</div>
+	<script type="text/javascript">
+		$(document).ready(
+			function () {
+				$('input[name="bot1"]').click(
+					function () {
+						$('img').fadeOut('slow');
+						$("#img1").fadeIn("slow");
+					});
+					$('input[name="bot2"]').click(
+						function () {
+							$('img').fadeOut('slow');
+							$("#img2").fadeIn("slow");
+						});
+			});
+	
+	</script>
+	<div id="div1" class="container">
+	<div class="row">
+	<div class="col-md-4">
+	<input type="button" name="bot1" value="Anterior" />
+	<input type="button" name="bot2" value="Proximo" /><br>
+	<img id="img1" src="http://s2.glbimg.com/llqsuYm5JaZ8ppNBRqJQZm7tCIU=/620x465/s.glbimg.com/jo/g1/f/original/2016/08/31/44-festival-de-cinema-de-gramado-02146.jpg" style="position: absolute;" />
+	<img id="img2" src="http://cinezencultural.com.br/site/wp-content/uploads/2012/04/sozinhocinema.jpg" style="display: none;position: absolute;" />
+	</div>
+	</div>
+	</div>
+	<br>
+	<div class="container">
+ 		<h3 align="center" id="Sobre">Sobre o projeto:</h3>
+ 		<div class="jumbotron">
+ 			<p align="center">Somos uma empresa nova na área audiovisual, nossa equipe é formada pro apreciadores da fotografia e cinematografia. Adotamos uma abordagem moderna, focando na qualidade e inovação além de prezarmos a interação entre os clientes e a nossa equipe no processo criativo e de desenvolvimento dos projetos. </p>
+ 		</div><!--fim da galeria de imagens-->
+    </div>
+</div>
+		<div class="container">
+			<div>
+				<h3 id="Equipe">Conheça a equipe:</h3>
+				<div class="row">
+      <div>
+        <div class="jumbotron" align="center"><!--area da equipe-->
+          <img src="imgs/17426108_1226105470831653_8028400715186135513_n%20(1).png
+" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Direção e roteiro</p>
+          <img src="imgs/17862768_228971350913566_1378769355923414673_n.png" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Filmagem e fotografia</p>
+          <img src="imgs/10610819_797469350384894_2738120545881891544_n.png
+" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Edição e roteiro</p>
+			</div>
+		</div>
+		<div><!--fim da area de equipe-->
+			<h3 id="Contato">Entre em contato:</h3>
+			<div class="jumbotron"><!--area de contato-->
+				<p><b>EMAIL:</b> contato@imagemnacao.com.br<br>
+				<b>TELEFONE:</b> (85) 8888-8888<br>
+				<b>ENDEREÇO:</b> estúdio imagem n'ação (Alameda dos anjos, 666)
+nárnia, guarda-roupa cep: 40028-922
+				</p>
+	<div class="container" align="center">
+	<p><b>Mande uma mensagem:</b></p>
+  	<form action="/action_page.php">
+
+    	<label for="fname">Nome</label>
+    	<input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+    	<br>
+    	<label for="lname">Sobrenome</label>
+    	<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+    	<br>
+    	<label for="service">Serviço</label>
+    	<select id="service" name="Serviço">
+      		<option value="curta">Curta-metragem</option>
+      		<option value="longa">Longa-metragem</option>
+      		<option value="comercial">Comercial</option>
+      		<option value="clipe">Clipe</option>
+    		</select>
+    	<br>
+    	<label for="msg">Mensagem</label>
+    	<br>
+    	<textarea id="msg" name="Mensagem" placeholder="Escreva aqui..." style="height:100px"></textarea>
+    	<br>
+    	<input type="submit" value="Enviar">
+
+  </form>
+	</div>
+</div><!--fim da area de contato-->
+	<div>
+		<footer class="row footer"><!--rodapé-->
+			<a href="index.html#">
+			<h3 class="textopé">Imagem n'ação</h3>
+			</a>
+			<div class="col-lg-4 text-right">
+			Nos siga nas redes sociais:<br>
+			<img class="face" src="imgs/face.png
+">
+			<img class="twitter" src="imgs/twit.png
+">
+		<p class="créditos">Imagem n'ação | Vinicius Oliveira | 2017</p>
+		</footer><!--fim do rodapé-->
+	</div>
+</body>
+</html>
