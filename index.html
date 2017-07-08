@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta name="Author" content="Natanael Gutemberg">
-		<meta charset="utf-8">
-		<link rel="icon" type="icon" href="imagens/Logo FCM.jpg">
-		<title>FCM</title>
-		
-		
-		 <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="CSS/Index.css">
-
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<style type="text/css">
-			#div1 {
+<head>
+	<!--link dos arquivos css-->
+	<link rel="stylesheet" type="text/css" href="css/background.css
+">
+	<link rel="stylesheet" type="text/css" href="css/style.css
+">
+	<link rel="stylesheet" type="text/css" href="css/imgs.css
+"> <!--Fim dos arquivos css-->
+	<!--inicio dos arquivos bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!--Fim dos arquivos bootstrap-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<style type="text/css">
+		#div1 {
 			width: 500px;
 			height: 500px;
-			
 		}
-		</style>
-
-	</head>
-	<body>
-		 <nav class="navbar navbar-inverse navbar-fixed-top"><!--barra de Navegação-->
-  				<div class="container-fluid">
-   					 <div class="navbar-header">
-    					<img class="navbar-brand" src="imagens/Logo%20FCM.jpg"/>
-    						</div>
-   								 <ul class="nav navbar-nav">
-    							  <li class="active"><a href="#">Início</a></li>
-     							  <li><a href="#"></a></li>
-    							  <li><a href="#sobre">Sobre</a></li>
-      							  <li><a href="#Desenvolvedor">Desenvolvedor</a></li>
-      							  <li><a href="#Contato">Contato</a></li>
-      							  <li><a href="html/Blog.html">Blog</a></li>
-    							</ul>
-    			<ul class="nav navbar-nav navbar-right">
-      				<li><a href="html/Inscreva-se.html"><span class="glyphicon glyphicon-user"></span>Inscreva-se</a></li>
-      				<li><a href="html/Login.html"><span class="glyphicon glyphicon-log-in"></span>Logar</a></li>
-    		   </ul>
-  		 	</div>
-		</nav> 											
-			<br>
-			<br>
-			<br>
-			<script type="text/javascript">
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Imagem N'Ação</title>
+</head>
+<body>
+	<div>
+	<header><!--Inicio do cabeçalho-->
+		<a href="" title="Imagem N'Ação" rel="Home">
+		<img align="center" width="877" src="imgs/header.png"><!--banner do site-->
+		</a>
+		<nav><!--barra de navegação-->
+		 <ul>
+  			<li><a href="index.html">Home</a></li>
+  			<li><a href="#Sobre">Sobre</a></li>
+  			<li><a href="#Equipe">Equipe</a></li>
+  			<li><a href="#Contato">Contato</a></li>
+  			<li><a href="html/blog.html">Blog</a></li>
+  			<li><a href="html/login.html">Login</a></li>
+		</ul> 
+		</nav><!--Fim da barra de navegação-->
+	</header><!--fim do cabeçalho-->
+	</div>
+	<script type="text/javascript">
 		$(document).ready(
 			function () {
 				$('input[name="bot1"]').click(
@@ -62,101 +55,90 @@
 							$("#img2").fadeIn("slow");
 						});
 			});
+	
 	</script>
 	<div id="div1" class="container">
 	<div class="row">
 	<div class="col-md-4">
-	<input type="button" name="bot2" value="<--" />
-	<input type="button" name="bot1" value="-->" /><br>
-	<img id="img1" src="imagens/1.jpg" style="position: absolute;" />
-	<img id="img2" src="imagens/2.jpg" style="display: none;position: absolute;"/>
+	<input type="button" name="bot1" value="Anterior" />
+	<input type="button" name="bot2" value="Proximo" /><br>
+	<img id="img1" src="http://s2.glbimg.com/llqsuYm5JaZ8ppNBRqJQZm7tCIU=/620x465/s.glbimg.com/jo/g1/f/original/2016/08/31/44-festival-de-cinema-de-gramado-02146.jpg" style="position: absolute;" />
+	<img id="img2" src="http://cinezencultural.com.br/site/wp-content/uploads/2012/04/sozinhocinema.jpg" style="display: none;position: absolute;" />
 	</div>
 	</div>
 	</div>
 	<br>
-	<br>
-	<br>
-	<br>
-			<div class="jumbotron text-center"><h1>O Que Fazemos ?</h1></div><!--O que Fazemos-->
-			<div class="container">
+	<div class="container">
+ 		<h3 align="center" id="Sobre">Sobre o projeto:</h3>
+ 		<div class="jumbotron">
+ 			<p align="center">Somos uma empresa nova na área audiovisual, nossa equipe é formada pro apreciadores da fotografia e cinematografia. Adotamos uma abordagem moderna, focando na qualidade e inovação além de prezarmos a interação entre os clientes e a nossa equipe no processo criativo e de desenvolvimento dos projetos. </p>
+ 		</div><!--fim da galeria de imagens-->
+    </div>
+</div>
+		<div class="container">
+			<div>
+				<h3 id="Equipe">Conheça a equipe:</h3>
 				<div class="row">
-					<div class="col-md-3"></div>
-					<div class="col-md-3">
-						<img class="float center-block" width="200" height="200" src="imagens/Fazemos/4.jpg">
-						<p><font size="4" color="White">Levamos Conteúdo de Qualidade sobre Clássicos Esportivos,Muscle.</font></p>
-					</div>
-					 	<div class="col-md-3">			
-								<img class="float-right center-block
-					 			" width="200" height="200" src="imagens/Fazemos/5.jpg">
-								<p class="float-right center-block"><font size="4" color="White">Trazemos as mais Recentes Informações Sobre o Mundo dos Carros Antigos.</font></p>
-					 	</div>
-					  </div>
-					</div>
-
-				<br>
-							<div class="jumbotron text-center" id="sobre"><h1>Sobre o Site</h1></div><!--Sobre O Site-->
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6 col-md-offset-3">
-										<p class="jumbotron jumbotron1 center-block"><font size="6"> O Site Foi Criado Especialmente Para Amantes de Carros Antigos Todos Os Post Ou Maior Parte é Dedicado Para Apaixonados Por Carros Clássicos.</font></p>
-									</div>
-								</div>
-							</div>
-
-			<br>
-					<!--Desevolvedor-->
-				    <div class="jumbotron text-center" id="Desenvolvedor"><h1>Desenvolvedor</h1></div>
-				   		 <img height="300" width="300" class="center-block img-circle" src="imagens/Perfil/Foto Natanael.jpeg" alt="Natanael">
-						<h1 class="text-center jum"><font color="White">Criador e Desenvolvedor.
-						</font>
-						</h1>
-					<br>
-					<br>
-					<br>
-						<!--Contato-->
-			<div class="jumbotron text-center" id="Contato"><h1>Contato</h1></div>
-			<div  class="container">
-					<div class="row">
-					<div class="col-md-1"></div>
-						<div class="col-md-4 formulario">
-							<h3>E-mail: forcarmaniacs@gmail.com</h3>
-							<h3>Tel: (85) 989859782</h3>
-							<h3>Facebook: Natanael Gutemberg</h3>
-					</div>
-					<div class="col-md-2"></div>
-						<div class="col-md-4 formulario">
-							 <div class="form-group">
-  									<label for="usr"><font color="White">Nome:</font></label>
-  										<input type="text" class="form-control" id="usr">
-											</div>
-										<div class="form-group">
-  											<label for="usr"><font color="White">E-mail:</font></label>
-  											<input type="text" class="form-control" id="usr">
-										</div> 
-							 			<div class="form-group">
-  											<label for="Comente"><font color="white">Comente:</font></label>
-  									<textarea class="form-control" rows="5" id="Comente"></textarea>
-									<form><input type="submit" name="Enviar"></form>
-							</div> 
-
-						</div>
-						<div class="col-md-1"></div>
-					</div>	
-				</div>
-			<br>
-			<br>
-
-
-
-
-		<footer class="container-fluid text-center rodape"><!--Rodapé-->
-  				<p>
-  		<a target="blank" class="a1" href="https://www.facebook.com"><span class="glyphicon glyphicon-hand-right">Facebook</span></a>  |
-  			<a target="blank" class="a3" href="https://www.google.com/gmail/about/"><span class="glyphicon">&#x2709;</span>E-mail</a>
-  		|<a target="blank" class="a2"  href="https://web.whatsapp.com/%F0%9F%8C%90/pt-br"><span class="glyphicon">&#xe182;</span>Whatsapp</a>
+      <div>
+        <div class="jumbotron" align="center"><!--area da equipe-->
+          <img src="imgs/17426108_1226105470831653_8028400715186135513_n%20(1).png
+" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Direção e roteiro</p>
+          <img src="imgs/17862768_228971350913566_1378769355923414673_n.png" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Filmagem e fotografia</p>
+          <img src="imgs/10610819_797469350384894_2738120545881891544_n.png
+" width="20%" alt="Desenvolvedor" title="Desenvolvedor" class="img-circle">
+          <p>Edição e roteiro</p>
+			</div>
+		</div>
+		<div><!--fim da area de equipe-->
+			<h3 id="Contato">Entre em contato:</h3>
+			<div class="jumbotron"><!--area de contato-->
+				<p><b>EMAIL:</b> contato@imagemnacao.com.br<br>
+				<b>TELEFONE:</b> (85) 8888-8888<br>
+				<b>ENDEREÇO:</b> estúdio imagem n'ação (Alameda dos anjos, 666)
+nárnia, guarda-roupa cep: 40028-922
 				</p>
-		</footer>
+	<div class="container" align="center">
+	<p><b>Mande uma mensagem:</b></p>
+  	<form action="/action_page.php">
 
+    	<label for="fname">Nome</label>
+    	<input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+    	<br>
+    	<label for="lname">Sobrenome</label>
+    	<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+    	<br>
+    	<label for="service">Serviço</label>
+    	<select id="service" name="Serviço">
+      		<option value="curta">Curta-metragem</option>
+      		<option value="longa">Longa-metragem</option>
+      		<option value="comercial">Comercial</option>
+      		<option value="clipe">Clipe</option>
+    		</select>
+    	<br>
+    	<label for="msg">Mensagem</label>
+    	<br>
+    	<textarea id="msg" name="Mensagem" placeholder="Escreva aqui..." style="height:100px"></textarea>
+    	<br>
+    	<input type="submit" value="Enviar">
 
-	</body>	
+  </form>
+	</div>
+</div><!--fim da area de contato-->
+	<div>
+		<footer class="row footer"><!--rodapé-->
+			<a href="index.html#">
+			<h3 class="textopé">Imagem n'ação</h3>
+			</a>
+			<div class="col-lg-4 text-right">
+			Nos siga nas redes sociais:<br>
+			<img class="face" src="imgs/face.png
+">
+			<img class="twitter" src="imgs/twit.png
+">
+		<p class="créditos">Imagem n'ação | Vinicius Oliveira | 2017</p>
+		</footer><!--fim do rodapé-->
+	</div>
+</body>
 </html>
